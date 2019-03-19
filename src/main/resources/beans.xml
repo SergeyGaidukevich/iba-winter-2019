@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="astronaut1" class="com.gaidukevich.ibaWinter2019.entity.Astronaut" scope="prototype">
+        <constructor-arg value="Sergey"/>
+        <constructor-arg value="Gaidukevich"/>
+        <constructor-arg value="20"/>
+        <constructor-arg value="1"/>
+        <constructor-arg value="captain"/>
+    </bean>
+
+    <bean name="astronaut2" class="com.gaidukevich.ibaWinter2019.entity.Astronaut" scope="prototype">
+        <constructor-arg value="Vasiliy"/>
+        <constructor-arg value="Vasilevich"/>
+        <constructor-arg value="18"/>
+        <constructor-arg value="2"/>
+        <constructor-arg value="captain"/>
+    </bean>
+
+    <bean name="astronaut3" class="com.gaidukevich.ibaWinter2019.entity.Astronaut" scope="prototype">
+        <constructor-arg value="Alex"/>
+        <constructor-arg value="Pupkinovich"/>
+        <constructor-arg value="27"/>
+        <constructor-arg value="1"/>
+        <constructor-arg value="captain"/>
+    </bean>
+
+    <bean name="spacecraft1" class="com.gaidukevich.ibaWinter2019.entity.Spacecraft" scope="prototype">
+        <constructor-arg index="0" value="SpaceX"/>
+        <constructor-arg index="1" value="1"/>
+        <constructor-arg index="2" value="0"/>
+    </bean>
+
+    <bean name="spacecraft2" class="com.gaidukevich.ibaWinter2019.entity.Spacecraft" scope="prototype">
+        <constructor-arg index="0" value="SpaceX"/>
+        <constructor-arg index="1" value="3"/>
+        <constructor-arg index="2" value="32"/>
+    </bean>
+
+    <bean name="trip" class="com.gaidukevich.ibaWinter2019.entity.Trip"/>
+
+</beans>
