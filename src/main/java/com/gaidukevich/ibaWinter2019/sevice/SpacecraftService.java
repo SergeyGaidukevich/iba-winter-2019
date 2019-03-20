@@ -4,6 +4,7 @@ import com.gaidukevich.ibaWinter2019.entity.Spacecraft;
 
 public class SpacecraftService {
     public Spacecraft chooseSpacecraft() {
+        // timer using
         // add parameter(choose shuttle by criterias)
         return null;
     }
