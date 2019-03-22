@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
     <bean name="astronaut1" class="com.gaidukevich.ibaWinter2019.entity.Astronaut" scope="prototype">
         <constructor-arg value="Sergey"/>
@@ -34,10 +34,16 @@
     </bean>
 
     <bean name="spacecraft2" class="com.gaidukevich.ibaWinter2019.entity.Spacecraft" scope="prototype">
-        <constructor-arg index="0" value="SpaceX"/>
+        <constructor-arg index="0" value="Leks"/>
         <constructor-arg index="1" value="3"/>
         <constructor-arg index="2" value="32"/>
     </bean>
+
+    <util:list id="astronauts" value-type="com.gaidukevich.ibaWinter2019.entity.Astronaut">
+        <ref bean="astronaut1"/>
+        <ref bean="astronaut2"/>
+        <ref bean="astronaut3"/>
+    </util:list>
 
     <bean name="trip" class="com.gaidukevich.ibaWinter2019.entity.Trip"/>
 

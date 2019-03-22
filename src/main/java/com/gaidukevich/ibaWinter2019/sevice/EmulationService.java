@@ -1,7 +1,12 @@
 package com.gaidukevich.ibaWinter2019.sevice;
 
 public class EmulationService {
-    public void emulationTrip() {
+    private static int countKilometers;
+
+    public static void emulationTrip() {
         // print kilometers
+        for (int i = 0; countKilometers < 63; i++) {
+            System.out.println("Kilometer traveled = " + countKilometers++);
+        }
     }
 }

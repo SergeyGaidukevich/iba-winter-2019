@@ -1,7 +1,5 @@
 package com.gaidukevich.ibaWinter2019.entity;
 
-import org.springframework.context.annotation.Bean;
-
 import java.util.Objects;
 
 public class Astronaut {
